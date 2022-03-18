@@ -1,0 +1,47 @@
+html, body {
+  background-color: #e8a87c;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  /* background-image: url(./background.jpg); */
+  background-color: #cdecff;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.worldmap {
+  padding-top: 2%;
+  text-align: center;
+}
+th{vertical-align: middle;}
+td{vertical-align: middle;}
+h1 {
+  text-align: center;
+  border: 2px solid black;
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+}
+.i {
+  background-color: antiquewhite;
+  text-align: center;
+  border: 2px solid black;
+  width: 30%;
+  margin: auto;
+  vertical-align: middle;
+}
+.tab {
+  margin: auto;
+  margin-top: 5%;
+  width: 90%;
+}
+.rep{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
