@@ -1,0 +1,59 @@
+html,
+body {
+  background-color: #e27d60;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  background-image: url(./background.jpg);
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.logo {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.div1 {
+  margin: auto;
+  width: 200px;
+  padding-top: 3%;
+}
+
+a {
+  background-color: #41b3a3;
+  color: black;
+  border: 2px solid #41b3a3;
+  border-radius: 15px;
+  font-size: large;
+  font-size: 40px;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.PlayBtn {
+  text-align: cesnter;
+}
+
+.SettingsBtn {
+  text-align: center;
+}
+
+.CreditsBtn {
+ text-align: center;
+}
+
+a:hover {
+  background-color: #86cecb;
+  border: #41b3a3;
+  color: white ;
+  cursor: pointer;
+}
