@@ -1,0 +1,249 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  background-color: #e27d60;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  background-image: url(./background.jpg);
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.logo {
+  padding-top: 6%;
+  text-align: center;
+}
+
+.div1 {
+  margin: auto;
+  width: 200px;
+  padding-top: 3%;
+}
+
+.PlayBtn,
+.SettingsBtn,
+.LoginBtn,
+.CreditsBtn {
+  background-color: #40b3a3;
+  color: black;
+  border: 2px solid #41b3a3;
+  border-radius: 15px;
+  font-size: large;
+  font-size: 40px;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+}
+
+.PlayBtn {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.SettingsBtn {
+  padding-left: 26.65px;
+  padding-right: 26.65px;
+}
+
+.CreditsBtn {
+  padding-left: 35.55px;
+  padding-right: 35.55px;
+}
+
+.LoginBtn {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+button {
+  /* background-color: #04aa6d; */
+  /* padding: 14px 20px; */
+  margin: 8px 0;
+  /* border: none; */
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 5%;
+  margin: auto;
+}
+.container-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 5px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+.container .forms {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 200%;
+  transition: height 0.2s ease;
+}
+
+.container .form {
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+  transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+  margin-left: -50%;
+
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup {
+  opacity: 0;
+  transition: opacity 0.09s ease;
+}
+.container.active .signup {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.container.active .forms {
+  height: 600px;
+}
+.container .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #4070f4;
+  border-radius: 25px;
+}
+
+.form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.input-field input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: #4070f4;
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+  color: #4070f4;
+}
+
+.input-field i.icon {
+  left: 0;
+}
+.input-field i.showHidePw {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.form .checkbox-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-content input {
+  margin: 0 8px -2px 4px;
+  accent-color: #4070f4;
+}
+
+.form .text {
+  color: #333;
+  font-size: 14px;
+}
+
+.form a.text {
+  color: #4070f4;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form .button {
+  margin-top: 35px;
+}
+
+.form .button input {
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button input:hover {
+  background-color: #265df2;
+}
+
+.form .login-signup {
+  margin-top: 30px;
+  text-align: center;
+}
