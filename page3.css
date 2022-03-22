@@ -1,5 +1,4 @@
-html,
-body {
+html,body {
   background-color: #e8a87c;
   margin: 0%;
   height: 100%;
@@ -15,7 +14,7 @@ body {
 }
 
 .worldmap {
-  padding-top: 2%;
+  padding-top: 1%;
   text-align: center;
 }
 
@@ -24,23 +23,57 @@ h1 {
   border: 2px solid black;
   width: 60%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .i {
-  background-color: antiquewhite;
+  background-color: #faebd7;
   text-align: center;
   border: 2px solid black;
   width: 30%;
   margin: auto;
 }
-.tab {
-  margin: auto;
-  margin-top: 5%;
-  width: 90%;
-}
 .rep{
     text-align: center;
     width: 60%;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 1%;
+}
+.solutions{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:' img1 img2 img3 img5 img6'
+                       'img1 img4 img4 img5 img6' ;
+  grid-gap: 0.15rem;                     
+  margin:auto;
+  padding: 2%;
+  align-items: center;
+
+}
+.img1front , .img1back{
+   grid-area: img1; 
+   transition: transform 1s;
+   transform-style: preserve-3d;
+}
+.img1back,.img1front.isflipped{
+  transform: rotateY(180deg);
+}
+.img1front{
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.img2{
+  grid-area: img2; 
+}
+.img3{
+  grid-area: img3; 
+}
+.img4{
+  grid-area: img4; 
+}
+.img5{
+  grid-area: img5; 
+}
+.img6{
+  grid-area: img6; 
 }
