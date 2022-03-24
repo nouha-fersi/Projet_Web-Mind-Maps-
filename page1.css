@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* ===== Google Font Import - Poformsins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 html,
 body {
   background-color: #e27d60;
@@ -14,7 +18,7 @@ body {
 }
 
 .logo {
-  padding-top: 10%;
+  padding-top: 6%;
   text-align: center;
 }
 
@@ -24,8 +28,11 @@ body {
   padding-top: 3%;
 }
 
-a {
-  background-color: #41b3a3;
+.PlayBtn,
+.SettingsBtn,
+.LoginBtn,
+.CreditsBtn {
+  background-color: #40b3a3;
   color: black;
   border: 2px solid #41b3a3;
   border-radius: 15px;
@@ -34,26 +41,243 @@ a {
   padding: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 10px;
-  text-decoration: none;
-  display: block;
+  margin-top: 5px;
 }
 
 .PlayBtn {
-  text-align: cesnter;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .SettingsBtn {
-  text-align: center;
+  padding-left: 26.65px;
+  padding-right: 26.65px;
 }
 
 .CreditsBtn {
- text-align: center;
+  padding-left: 35.55px;
+  padding-right: 35.55px;
 }
 
-a:hover {
-  background-color: #86cecb;
-  border: #41b3a3;
-  color: white ;
+.LoginBtn {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+button {
+  /* background-color: #04aa6d; */
+  /* padding: 14px 20px; */
+  margin: 8px 0;
+  /* border: none; */
   cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  padding-left: 30%;
+  padding-right: 50%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  text-align: left;
+  margin: auto;
+  width: 50%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+  margin: 4em auto 2em auto;
+  padding: 1em;
+  overflow: hidden;
+  border: 2px solid black;
+}
+.input-icons i {
+  position:fixed;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.icon {
+  padding: 20px;
+  color: rgb(8, 8, 8);
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+/* The Close Button */
+
+.close {
+  color: #aaa5a5;
+  float: right;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  cursor: pointer;
+}
+ div.modal button , div.modal label {
+    display: block;
+    width: 80%;
+    font-size: 1em;
+}
+div.modal label {
+    margin: 0.5em auto 0.5em auto;
+}
+
+.input-field {
+  padding: 0.8em 0 0.8em 0.8em;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 0.5em auto 0.5em auto;
+  display: block;
+  width: 80%;
+  font-size: 1em;
+ 
+}
+
+div.modal button {
+    outline: none;
+    margin: 2em auto 1em auto;
+    padding: 1.2em;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 2px 2px #888;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*tab styles*/
+.tab {
+    margin: 0 auto 0 auto;
+    display: flex;
+    width: 100%;
+}
+.tablinks{
+padding: 1em 0 1em 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: 0.4px solid black;
+    transition: all 0.2s linear;
+}
+
+.login-signup {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+  border: none;
+}
+.tablinks{
+  cursor: pointer;
+}
+.active {
+    animation-name: activetab;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    background-color: black;
+    color: white;
+}
+
+@keyframes activetab {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.tabcontent {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: none;
+    padding: 2em 0 2em 0;
+    overflow: hidden;
+}
+/*device specific styles*/
+@media only screen and (min-width: 1224px) {
+    div.modal {
+        overflow: hidden;
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 1824px) {
+  div.modal {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) 
+{
+  div.modal 
+  {
+    width: 80%;
+  } 
+}
+input[type=checkbox] + label {
+  color: #ccc;
+  display: inline;
+  justify-content: space-between;
+} 
+input[type=checkbox]:checked + label {
+  color: rgb(15, 19, 22);
+  font-style: normal;
+} 
+.checkbox-content input {
+  margin: 0 8px -2px 4px;
+  accent-color: #4070f4;
+}
+a.text {
+  color: #4070f4;
+  text-decoration: none;
+  text-align:end;
+}
+a:hover {
+  text-decoration: underline;
+}
+.checkbox-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }

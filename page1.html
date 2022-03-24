@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mind Maps</title>
-    <link rel="stylesheet" href="page1.css" />
-  </head>
-  <body>
-    <div class="img">
-      <div class="logo">
-        <img src="logo1.png" width="350px" />
-      </div>
-      <div class="div1">
-        <a class="PlayBtn" href="page2.html">Play</a> <br />
-        <a class="SettingsBtn">Settings</a> <br />
-        <a class="CreditsBtn">Credits</a>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Mind Maps</title>
+  <link rel="stylesheet" href="page1.css" />
+</head>
+<body>
+  <div class="img">
+    <div class="logo">
+      <img src="logo1.png" width="350px" />
     </div>
-  </body>
+
+    <div class="div1">
+      <button class="PlayBtn" onclick="window.location.href='page2.html'">Play</button>
+      <button class="SettingsBtn">Settings</button>
+      <button onclick="document.getElementById('myModal').style.display='block'" style="width: auto" class="LoginBtn" id="myBtn">
+        Login
+      </button>
+      <button class="CreditsBtn">Credits</button>
+    </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="tab">
+        <div class="tablinks" id="logintab" data-form-id="login">Login</div>
+        <div class="tablinks" id="signuptab" data-form-id="signup">Sign up</div>
+        
+    </div>
+    <div class="tabcontent" id="login">
+      <form style="max-width:450px;margin:auto">
+        <div class="input-icons">
+          <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text"placeholder="Enter your email">
+        </div>
+        <div class="input-icons">
+          <i class="fa fa-lock icon"></i>
+            <input class="input-field" type="password" placeholder="Enter your password">
+        </div>
+        <div class="checkbox-text">
+          <div class="checkbox-content">
+            <input type="checkbox" id="ossm" name="ossm"> 
+            <label for="ossm">Remember me</label> 
+          </div>
+          <a href="#" class="text">Forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <div class="login-signup">
+      <span class="text">Not a member?</span>
+        <div class="tablinks" data-form-id="signup" id="signuptab">Signup now</div>
+    </div>
+</div>
+<div class="tabcontent" id="signup">
+  <form style="max-width:450px;margin:auto">
+    <div class="input-icons">
+      <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text"  placeholder="Enter your name">
+    </div>
+    <div class="input-icons">
+        <i class="fa fa-envelope icon"></i>
+        <input class="input-field" type="text" placeholder="Enter your email">
+    </div>
+    <div class="input-icons">
+        <i class="fa fa-lock icon"></i>
+        <input class="input-field" type="password"placeholder="Create a password">
+    </div>
+    <div class="input-icons">
+      <i class="fa fa-lock icon"></i>
+      <input class="input-field" type="password"placeholder="Confirm a password">
+  </div>
+    <button type="submit">Sign up</button>
+    <div class="login-signup">
+      <span class="text">Have an account?</span>
+      <div class="tablinks" id="logintab" data-form-id="login">Login</div>
+    </div>
+</div>
+</form>
+<script src="page1.js"></script>
+</body>
 </html>
