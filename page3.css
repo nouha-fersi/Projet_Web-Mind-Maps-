@@ -41,17 +41,17 @@ h1 {
 }
 .solutions{  
   width: 100%;
-  margin: 0 auto;
-  padding:10px;
+  margin: auto;
   border-radius:2px;
-  font-size:35px;
+  font-size:30px;
+  text-align: center ;
 }
 .img1{
-  margin: 0 auto;
+  margin:auto;
   text-align: center;
   display:inline-block;
-	width: 150px;
-	height: 150px;
+	width: 160px;
+	height: 160px;
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s; /* Animate the transform properties */
 	-webkit-transform-style: preserve-3d;
@@ -61,7 +61,7 @@ h1 {
   border: 1px solid grey;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	height: 150px;
+	height: 160px;
   display:flex;
   align-items:center;
   text-align:center;
@@ -73,7 +73,7 @@ h1 {
 	transform: translateZ(70px);
 }
 .imgback{
-  height:150px;
+  height:160px;
   background: #e8a87c;
 	-webkit-transform: rotateX(-90deg) translateZ(-70px);
 	transform: rotateX(-90deg) translateZ(-70px);
