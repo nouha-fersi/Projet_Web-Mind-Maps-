@@ -8,7 +8,7 @@ html,body {
 .img {
   /* background-image: url(./background.jpg); */
   background-color: #cdecff;
-  height: 150%;
+  height: 100%;
   width: 70%;
   margin: auto;
 }
@@ -24,7 +24,6 @@ h1 {
   width: 60%;
   margin: auto;
   margin-top: 1%;
-  margin-bottom: 3%;
 }
 .i {
   background-color: #faebd7;
@@ -37,48 +36,62 @@ h1 {
     text-align: center;
     width: 60%;
     margin: auto;
-   margin-top: -3%;
+    margin-top: 1%;
 }
-.solutions{  
-  width: 100%;
-  margin: auto;
-  border-radius:2px;
-  font-size:30px;
-  text-align: center ;
+
+.container {
+  background: #d1dbbd;
+  width: 80%;
+  height: 140px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 35px;
 }
-.img1{
-  margin:auto;
+.cube {
+  margin: 0 auto;
+  display: inline-block;
+  width: 130px;
   text-align: center;
-  display:inline-block;
-	width: 160px;
-	height: 160px;
-	-webkit-transition: -webkit-transform .33s;
-	transition: transform .33s; /* Animate the transform properties */
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+  height: 130px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s; /* Animate the transform properties */
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
-.imgfront,.imgback{
+
+.flip,
+.flop {
   border: 1px solid grey;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	height: 160px;
-  display:flex;
-  align-items:center;
-  text-align:center;
- }
- span {width:100%;}
-.imgfront{
-  background: #e8a87c;
-	-webkit-transform: translateZ(70px);
-	transform: translateZ(70px);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  
 }
-.imgback{
-  height:160px;
-  background: #e8a87c;
-	-webkit-transform: rotateX(-90deg) translateZ(-70px);
-	transform: rotateX(-90deg) translateZ(-70px);
+span {
+  width: 100%;
 }
-.img1:hover {
-	-webkit-transform: rotateX(90deg);
-	transform: rotateX(90deg);
-}  
+
+.flip {
+  background: #fcfff5;
+  -webkit-transform: translateZ(70px);
+  transform: translateZ(70px);
+}
+
+.flop {
+  height: 130px;
+  background: #91aa9d;
+  -webkit-transform: rotateX(-90deg) translateZ(-70px);
+  transform: rotateX(-90deg) translateZ(-70px);
+}
+
+
+.correctAns {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}

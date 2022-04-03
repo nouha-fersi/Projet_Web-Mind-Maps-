@@ -15,82 +15,62 @@
       <div>
         <h1>Guess the countries !</h1>
       </div>
-
-      <div class="solutions" >
-        <div class="img1">
-          <div class="imgfront">
-              <span>?</span>
+      <div class="container">
+        <div class="cube" id="usa" test="false">
+          <div class="flip">
+            <span>A</span>
           </div>
-          <div class="imgback">
+          <div class="flop">
             <span>USA</span>
           </div>
         </div>
-
-        <div class="img1">
-          <div class="imgfront">
-              <span>?</span>
+        <div class="cube" id="germany">
+          <div class="flip">
+            <span>B</span>
           </div>
-          <div class="imgback">
-            <span>JAPAN</span>
-          </div>
-        </div>
-
-        <div class="img1">
-          <div class="imgfront">
-              <span>?</span>
-          </div>
-          <div class="imgback">
-            <span>SPAIN</span>
+          <div class="flop">
+            <span>Germany</span>
           </div>
         </div>
-
-        <div class="img1">
-          <div class="imgfront">
-              <span>?</span>
+        <div class="cube" id="italy">
+          <div class="flip">
+            <span>B</span>
           </div>
-          <div class="imgback">
-            <span>GERMANY</span>
-          </div>
-        </div>
-
-        <div class="img1">
-          <div class="imgfront">
-              <span>?</span>
-          </div>
-          <div class="imgback">
-            <span>EGYPT</span>
+          <div class="flop">
+            <span>Italy</span>
           </div>
         </div>
-
-        <div class="img1">
-          <div class="imgfront">
-              <span>?</span>
+        <div class="cube" id="spain">
+          <div class="flip">
+            <span>C</span>
           </div>
-          <div class="imgback">
-            <span>ITALY</span>
+          <div class="flop">
+            <span>Spain</span>
           </div>
         </div>
-
+        <div class="cube" id="egypt">
+          <div class="flip">
+            <span>D</span>
+          </div>
+          <div class="flop">
+            <span>Egypt</span>
+          </div>
+        </div>
+        <div class="cube" id="japan">
+          <div class="flip">
+            <span>D</span>
+          </div>
+          <div class="flop">
+            <span>Japan</span>
+          </div>
+        </div>
       </div>
-      <form action="" name="f1" onsubmit >
-      <div class="rep">
-        <input type="text" name="write here" placeholder="Write Here" />
-        <input type="button" value="Check" onClick="checkAnswers()">  
+
+      <div class="rep" id="rep">
+        <input type="text" placeholder="Write Here" id="answer" />
       </div>
-      </form> 
-      
-
-
-       
-
-   
-  
-
-    
-
-
-
     </div>
+
     <script src="page3.js"></script>
   </body>
 </html>
