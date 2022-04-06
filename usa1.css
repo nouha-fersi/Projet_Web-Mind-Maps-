@@ -1,0 +1,169 @@
+html,body {
+    background-color: #e8a87c;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .img {
+    /* background-image: url(./background.jpg); */
+    background-color: #cdecff;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .worldmap {
+    padding-top: 1%;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .i {
+    background-color: #faebd7;
+    text-align: center;
+    border: 2px solid black;
+    width: 30%;
+    margin: auto;
+  }
+  .rep{
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-top: 1%;
+  }
+  
+  .container {
+    background: #d1dbbd;
+    width: 80%;
+    height: 140px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 35px;
+  }
+  .cube {
+    margin: 0 auto;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    height: 130px;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s; /* Animate the transform properties */
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .flip,
+  .flop {
+    border: 1px solid grey;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+  }
+  span {
+    width: 100%;
+  }
+  
+  .flip {
+    background: #fcfff5;
+    -webkit-transform: translateZ(70px);
+    transform: translateZ(70px);
+  }
+  
+  .flop {
+    height: 130px;
+    background: #91aa9d;
+    -webkit-transform: rotateX(-90deg) translateZ(-70px);
+    transform: rotateX(-90deg) translateZ(-70px);
+  }
+  
+  
+  .correctAns {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    padding-left: 30%;
+    padding-right: 50%;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+  
+  
+  /* Modal Content */
+  
+  .modal-content {
+    margin: 4em auto 2em auto;
+    padding: 1em;
+    overflow: hidden;
+    border: 2px solid black;
+  }
+  
+  /* The Close Button */
+  
+  .close {
+    color: #aaa5a5;
+    float: right;
+    font-size:x-large;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ 
+  /*device specific styles*/
+  @media only screen and (min-width: 1224px) {
+      div.modal {
+          overflow: hidden;
+          width: 400px;
+      }
+  }
+  @media only screen and (min-width: 1824px) {
+    div.modal {
+      width: 400px;
+    }
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) 
+  {
+    div.modal 
+    {
+      width: 80%;
+    } 
+  }
+.help{
+    background-color:#cdecff;
+    text-align: center;
+}
