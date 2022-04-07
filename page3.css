@@ -40,7 +40,7 @@ h1 {
 }
 
 .container {
-  background: #d1dbbd;
+  
   width: 80%;
   height: 140px;
   margin: 0 auto;
@@ -78,14 +78,14 @@ span {
 }
 
 .flip {
-  background: #fcfff5;
+  background: #eebe9f;
   -webkit-transform: translateZ(70px);
   transform: translateZ(70px);
 }
 
 .flop {
   height: 130px;
-  background: #91aa9d;
+  background: #e27D60;
   -webkit-transform: rotateX(-90deg) translateZ(-70px);
   transform: rotateX(-90deg) translateZ(-70px);
 }

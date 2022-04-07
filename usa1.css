@@ -8,7 +8,7 @@ html,body {
   .img {
     /* background-image: url(./background.jpg); */
     background-color: #cdecff;
-    height: 100%;
+    height: 150%;
     width: 70%;
     margin: auto;
   }
@@ -41,7 +41,6 @@ html,body {
   }
   
   .container {
-    background: #d1dbbd;
     width: 80%;
     height: 140px;
     margin: 0 auto;
@@ -79,14 +78,14 @@ html,body {
   }
   
   .flip {
-    background: #fcfff5;
+    background: #eebe9f;
     -webkit-transform: translateZ(70px);
     transform: translateZ(70px);
   }
   
   .flop {
     height: 130px;
-    background: #91aa9d;
+    background: #eebe9f;
     -webkit-transform: rotateX(-90deg) translateZ(-70px);
     transform: rotateX(-90deg) translateZ(-70px);
   }
@@ -103,9 +102,9 @@ html,body {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 100px;
-    padding-left: 30%;
-    padding-right: 50%;
+    padding-top: 300px;
+    padding-left: 25%;
+    padding-right: 40%;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -127,10 +126,9 @@ html,body {
   /* Modal Content */
   
   .modal-content {
-    margin: 4em auto 2em auto;
+    margin: auto ;
     padding: 1em;
-    overflow: hidden;
-    border: 2px solid black;
+    font-size: 20px;
   }
   
   /* The Close Button */
@@ -143,27 +141,17 @@ html,body {
     cursor: pointer;
   }
  
-  /*device specific styles*/
-  @media only screen and (min-width: 1224px) {
-      div.modal {
-          overflow: hidden;
-          width: 400px;
-      }
-  }
-  @media only screen and (min-width: 1824px) {
-    div.modal {
-      width: 400px;
-    }
-  }
-  
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) 
   {
     div.modal 
     {
-      width: 80%;
+      width: 100%;
     } 
   }
 .help{
     background-color:#cdecff;
     text-align: center;
+}
+13{
+  padding left: auto; 
 }
