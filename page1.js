@@ -42,5 +42,57 @@ function openForm(formid, tabid) {
     }
     document.getElementById(formid).style.display = "block";
     document.getElementById(tabid).classList.add("active");
+
 }
 document.getElementById("logintab").click();
+function validation()  
+{  
+    var id=document.f1.user.value;  
+    var ps=document.f1.pass.value;  
+    if(id.length=="" && ps.length=="") {  
+        alert("User name and Password fields are empty");  
+        return false;  
+    }  
+    else  
+    {  
+        if(id.length=="") {  
+            alert("User name is empty");  
+            return false;  
+        }   
+        if (ps.length=="") {  
+        alert("Password field is empty");  
+        return false;  
+        }  
+    }                             
+}  
+document.getElementById("sign uptab").click();
+function validation2()  
+{  
+    var id=document.f2.email1.value;  
+    var ps1=document.f2.pass1.value; 
+    var ps2=document.f2.pass2.value; 
+    var us=document.f2.user1.value;
+    if(id.length=="" && ps1.length=="" && ps2.length=="" && us.length=="" ) {  
+        alert("fill you information");  
+        return false;  
+    }  
+    else  
+    {  
+        if(id.length=="") {  
+            alert("Email is empty");  
+            return false;  
+        }   
+        if (ps1.length=="") {  
+        alert("Password field is empty");  
+        return false;  
+        }  
+        if (ps2.length=="") {  
+            alert("confirme your password");  
+            return false;  
+        }
+        if (us.length=="") {  
+            alert("User field is empty");  
+            return false;  
+            }    
+    }                             
+}  
