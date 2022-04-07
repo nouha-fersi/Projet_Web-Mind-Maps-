@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="usa1.css" />
   </head>
   <body>
+
     <div class="img">
+      <div>
+        <button onclick="document.getElementById('myModal').style.display='block'" style="width: auto ; cursor: help; border-radius: 100%;margin-top: 1%;margin-left: 2%;" >
+          ?
+        </button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+              <p class="help">Today the flag consists of 13 horizontal stripes,
+                  seven red alternating with six white.
+                  The stripes represent the original 13 Colonies and the stars represent the 50 states of the Union. 
+                  The colors of the flag are symbolic as well;
+                  red symbolizes hardiness and valor,
+                  white symbolizes purity and innocence, 
+                  and blue represents vigilance,
+                  perseverance and justice.
+              </p>
+          </div>
+          <span class="close">&times;</span>
+         </div>
       <div class="worldmap">
         <img src="usa1.jpg" width="60%" />
+       
       </div>
       <div>
         <h1>describe the american flag !</h1>
@@ -69,23 +89,7 @@
       <div class="rep" id="rep">
         <input type="text" placeholder="Write Here" id="answer" />
       </div>
-      <button onclick="document.getElementById('myModal').style.display='block'" style="width: auto" class="LoginBtn" id="myBtn">
-        help
-      </button>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-            <p class="help">Today the flag consists of 13 horizontal stripes,
-                seven red alternating with six white.
-                The stripes represent the original 13 Colonies and the stars represent the 50 states of the Union. 
-                The colors of the flag are symbolic as well;
-                red symbolizes hardiness and valor,
-                white symbolizes purity and innocence, 
-                and blue represents vigilance,
-                perseverance and justice.
-            </p>
-        </div>
-        <span class="close">&times;</span>
-    </div>
+
     <script src="usa1.js"></script>
   </body>
 </html>
