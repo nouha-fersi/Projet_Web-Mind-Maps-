@@ -95,6 +95,31 @@ html,body {
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
   }
+  /*.shake
+    {
+      animation: shake 0.2s ease-in-out 0s 2;
+      box-shadow: 0 0 0.5em red;
+    }
+  @keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(3em);
+    }
+    40% {
+      transform: translate(-3em);
+    }
+    60% {
+      transform: translate(3em);
+    }
+    80% {
+      transform: translate(-3em);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }*/
   .modal {
     display: none;
     /* Hidden by default */
