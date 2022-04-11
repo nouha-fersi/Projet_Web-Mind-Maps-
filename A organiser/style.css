@@ -1,0 +1,60 @@
+html,
+body {
+  background-color: #e27d60;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  background-image: url(./background.jpg);
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.logo {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.div1 {
+  margin: auto;
+  width: 200px;
+  padding-top: 5%;
+}
+
+button {
+  background-color: #41b3a3;
+  color: black;
+  border: 2px solid #41b3a3;
+  border-radius: 15px;
+  font-size: large;
+  font-size: 40px;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.PlayBtn {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.SettingsBtn {
+  padding-left: 26.65px;
+  padding-right: 26.65px;
+}
+
+.CreditsBtn {
+  padding-left: 35.55px;
+  padding-right: 35.55px;
+}
+
+button:hover {
+  background-color: #4caf50;
+  border: #41b3a3;
+  color: white;
+  cursor: pointer;
+}
