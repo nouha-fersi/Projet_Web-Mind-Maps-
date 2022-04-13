@@ -17,8 +17,8 @@ body {
   text-align:center;
   padding-top: 5%;
   }
-  
-  .btn0, .country1, .country2, .country3, .country4, .country5, .country6{
+
+  /*.btn0, .country1, .country2, .country3, .country4, .country5, .country6{
     background-color: #41b3a3;
     color: black;
     border: 2px solid #41b3a3;
@@ -102,5 +102,20 @@ body {
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid black;
-  }
-  
+  }*/
+  .node {
+    cursor: pointer;
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node text {
+    font: 10px sans-serif;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
