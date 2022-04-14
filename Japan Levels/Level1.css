@@ -112,11 +112,16 @@ span {
   transform: rotateX(90deg);
 }
 
-.back{
+.back {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
   position: absolute;
   z-index: 1;
+}
 
+#next {
+  cursor: pointer;
+  float: right;
+  visibility: hidden;
 }
