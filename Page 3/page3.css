@@ -21,7 +21,6 @@ body {
   z-index: 0;
 }
 
-
 h1 {
   text-align: center;
   border: 2px solid black;
@@ -42,9 +41,7 @@ h1 {
   width: 60%;
   margin: auto;
   height: 5%;
-  
 }
-
 
 .ans {
   height: 100%;
@@ -79,7 +76,7 @@ h1 {
 
 .flip,
 .flop {
-  border: 1px solid grey;
+  border: 1px solid #85dcb8;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 130px;
@@ -100,7 +97,7 @@ span {
 
 .flop {
   height: 130px;
-  background: #91aa9d;
+  background: #85dcb8;
   -webkit-transform: rotateX(-90deg) translateZ(-70px);
   transform: rotateX(-90deg) translateZ(-70px);
 }
@@ -118,8 +115,8 @@ span {
   z-index: 1;
 }
 
-.next{
+#next {
   cursor: pointer;
-
-
+  float: right;
+  visibility: hidden;
 }

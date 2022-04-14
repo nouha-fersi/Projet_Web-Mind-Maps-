@@ -12,10 +12,9 @@ ele.addEventListener("keyup", function (event) {
         answer.classList.add("correctAns");
       }
       ele.value = "";
+      if(i==6){
+      var n = (document.getElementById("next").style.visibility = "visible");
+      }
     }
   }
 });
-
-if (i == 6) {
-  
-}
