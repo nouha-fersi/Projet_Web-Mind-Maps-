@@ -118,3 +118,8 @@ span {
 
 }
 
+#next {
+  cursor: pointer;
+  float: right;
+  visibility: hidden;
+}

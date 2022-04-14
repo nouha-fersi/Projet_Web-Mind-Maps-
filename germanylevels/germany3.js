@@ -1,5 +1,5 @@
 var ele = document.getElementById("answer");
-var i=0;
+var i = 0;
 ele.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     var answer = document.getElementById(ele.value.toLowerCase().trim());
@@ -12,6 +12,9 @@ ele.addEventListener("keyup", function (event) {
         answer.classList.add("correctAns");
       }
       ele.value = "";
+      if(i==1){
+      var n = (document.getElementById("next").style.visibility = "visible");
+      }
     }
   }
 });

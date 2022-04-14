@@ -97,7 +97,7 @@ html,body {
   
   .flop {
     height: 110px;
-    background: #e27D60;
+    background: #f3d6c3;
     -webkit-transform: rotateX(-90deg) translateZ(-70px);
     transform: rotateX(-90deg) translateZ(-70px);
   }
@@ -115,5 +115,12 @@ html,body {
     z-index: 1;
   
   }
+
+  .next {
+    cursor: pointer;
+    float: right;
+    visibility: hidden;
+  }
+  
   
   
