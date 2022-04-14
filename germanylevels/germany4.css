@@ -14,8 +14,11 @@ html,body {
   }
   
   .worldmap {
-    padding-top: 3%;
+    padding-top: 1%;
     text-align: center;
+    position: relative;
+    z-index: 0;
+  
   }
   
   h1 {
@@ -32,13 +35,14 @@ html,body {
     width: 30%;
     margin: auto;
   }
+  
   .rep{
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    height: 5%;
-}
-
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      height: 5%;
+  }
+  
   .ans{
     height: 100%;
     width: 30%;
@@ -46,30 +50,28 @@ html,body {
   }
   
   .container {
-    
     background:#bce5ff;
-    width: 80%;
-    height: 90px;
+    width: 77.5%;
+    height: 140px;
     margin: 0 auto;
     padding: 30px;
-    padding-bottom: 31px;
     margin-top: 2%;
     margin-bottom: 2%;
   
     border-radius: 15px;
-    font-size: 17px;
+    font-size: 35px;
   }
   .cube {
     margin: 0 auto;
     display: inline-block;
-    width: 90px;
+    width: 157px;
     text-align: center;
-    height: 90px;
+    font-size: 30px;
+    height: 130px;
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s; /* Animate the transform properties */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    cursor: pointer;
   }
   
   .flip,
@@ -77,7 +79,8 @@ html,body {
     border: 1px solid grey;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    height: 90px;
+    height: 130px;
+    width: 157px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -89,23 +92,23 @@ html,body {
   }
   
   .flip {
-   background: #fcfff5;
-  -webkit-transform: translateZ(70px);
-  transform: translateZ(70px);
+    background: #fcfff5;
+    -webkit-transform: translateZ(70px);
+    transform: translateZ(70px);
   }
   
   .flop {
-    height: 90px;
-    background: #e27D60;
+    height: 130px;
+    background:#f3d6c3;
     -webkit-transform: rotateX(-90deg) translateZ(-70px);
     transform: rotateX(-90deg) translateZ(-70px);
   }
-  
   
   .correctAns {
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
   }
+  
   .back{
     cursor: pointer;
     border-radius: 5px;

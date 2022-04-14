@@ -149,10 +149,7 @@ var svg = d3.select("#body").append("svg").attr("width", 1000).attr("height", 10
     .attr("transform", "translate(" + 350 + "," + 20 + ")");
 
 //necessary so that zoom knows where to zoom and unzoom from
-zm.translate([350, 20]);
-
-root.x0 = 0;
-root.y0 = height / 2;
+ 
 
 function collapse(d) {
     if (d.children) {

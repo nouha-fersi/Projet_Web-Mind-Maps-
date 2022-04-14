@@ -16,6 +16,9 @@ html,body {
   .worldmap {
     padding-top: 3%;
     text-align: center;
+    position: relative;
+    z-index: 0;
+
   }
   
   h1 {
@@ -33,20 +36,29 @@ html,body {
     margin: auto;
   }
   .rep{
-      text-align: center;
-      width: 60%;
-      margin: auto;
-      margin-top: 1%;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    height: 5%;
+}
+
+  .ans{
+    height: 100%;
+    width: 30%;
+    font-size: 30px;
   }
   
   .container {
-    
-    width: 80%;
+    background:#bce5ff;
+    width: 77.5%;
     height: 110px;
     margin: 0 auto;
     padding: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  
     border-radius: 15px;
-    font-size: 22px;
+    font-size: 35px;
   }
   .cube {
     margin: 0 auto;
@@ -78,9 +90,9 @@ html,body {
   }
   
   .flip {
-    background: #eebe9f;
-    -webkit-transform: translateZ(70px);
-    transform: translateZ(70px);
+    background: #fcfff5;
+  -webkit-transform: translateZ(70px);
+  transform: translateZ(70px);
   }
   
   .flop {
@@ -95,3 +107,13 @@ html,body {
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
   }
+  .back{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 1;
+  
+  }
+  
+  
