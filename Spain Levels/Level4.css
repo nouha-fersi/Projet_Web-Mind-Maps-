@@ -119,3 +119,9 @@ span {
   border: 1px solid black;
   z-index: 1;
 }
+
+#next {
+  cursor: pointer;
+  float: right;
+  visibility: hidden;
+}
