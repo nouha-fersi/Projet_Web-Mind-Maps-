@@ -1,4 +1,3 @@
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -48,3 +47,5 @@ function openForm(formid, tabid) {
   document.getElementById(tabid).classList.add("active");
 }
 document.getElementById("logintab").click();
+
+
