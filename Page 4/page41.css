@@ -7,7 +7,7 @@ body {
 }
 
 .img {
-  background-image: url(../background.jpg);
+  background-image: url();
   height: 100%;
   width: 70%;
   margin: auto;

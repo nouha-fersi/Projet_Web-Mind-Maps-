@@ -4,7 +4,8 @@
 
 html,
 body {
-  background-color: #e27d60;
+  background-color: ghostwhite;
+  background-image: url(1.gif);
   margin: 0%;
   height: 100%;
   width: 100%;
