@@ -10,7 +10,7 @@ body {
   height: 100%;
   width: 100%;
   background-size: 55%;
-  animation: transitionIn 3s;
+  animation: transitionIn 1s;
 }
 
 @keyframes transitionIn {

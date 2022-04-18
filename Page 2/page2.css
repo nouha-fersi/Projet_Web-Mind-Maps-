@@ -6,7 +6,7 @@ body {
   margin: 0%;
   height: 100%;
   width: 100%;
-  animation: transitionIn 2s;
+  animation: transitionIn 1s;
 }
 
 @keyframes transitionIn {
