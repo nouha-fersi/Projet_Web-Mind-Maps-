@@ -5,10 +5,11 @@
 html,
 body {
   background-color: ghostwhite;
-  background-image: url(2.gif);
+  background-image: url(cities.gif);
   margin: 0%;
   height: 100%;
   width: 100%;
+  background-size: 55%;
   animation: transitionIn 3s;
 }
 

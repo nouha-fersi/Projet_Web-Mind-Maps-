@@ -1,14 +1,15 @@
 html,
 body {
   background-color: ghostwhite;
-  background-image: url(2.gif);
+  background-image: url(cities.gif) ;
+  background-size: 55%;
   margin: 0%;
   height: 100%;
   width: 100%;
 }
 
 .img {
-  background-image: url(../1.png);;
+  background-image: url(../1.png);
   height: 100%;
   width: 70%;
   margin: auto;
