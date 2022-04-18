@@ -4,12 +4,13 @@ body {
   background-image: url(boom.gif);
   margin: 0%;
   height: 100%;
+  width: 100%;
 }
 
 .img {
   /* background-image: url(./background.jpg); */
   background-color: #cdecff;
-  height: 110%;
+  height: 101%;
   width: 70%;
   margin: auto;
   position: relative;
@@ -62,7 +63,7 @@ h1 {
   margin-bottom: 2%;
 
   border-radius: 15px;
-  font-size: 3px;
+  font-size: 35px;
 }
 .cube {
   margin: 0 auto;
@@ -157,7 +158,6 @@ span {
 lottie-player {
   position: absolute;
   z-index: 1;
-  text-align: center;
   visibility: hidden;
   margin-left: 10%;
   margin-right: 10%;

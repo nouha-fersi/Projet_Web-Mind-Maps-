@@ -1,5 +1,7 @@
-html,body {
-  background-color: #e8a87c;
+html,
+body {
+  background-color: ghostwhite;
+  background-image: url(boom.gif);
   margin: 0%;
   height: 100%;
   width: 100%;
@@ -11,14 +13,15 @@ html,body {
   height: 100%;
   width: 70%;
   margin: auto;
+  position: relative;
+  z-index: 0;
 }
 
 .worldmap {
   padding-top: 1%;
-  text-align: center;
   position: relative;
+  text-align: center;
   z-index: 0;
-
 }
 
 h1 {
@@ -36,14 +39,14 @@ h1 {
   margin: auto;
 }
 
-.rep{
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    height: 5%;
+.rep {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  height: 5%;
 }
 
-.ans{
+.ans {
   height: 100%;
   width: 30%;
   font-size: 30px;
@@ -55,7 +58,8 @@ h1 {
   height: 140px;
   margin: 0 auto;
   padding: 30px;
-  margin-top: 2%;
+  padding-bottom: 25px;
+  margin-top: 1%;
   margin-bottom: 2%;
 
   border-radius: 15px;
@@ -66,10 +70,9 @@ h1 {
   display: inline-block;
   width: 157px;
   text-align: center;
-  font-size: 30px;
   height: 130px;
   -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s; /* Animate the transform properties */
+  transition: transform 1.2s; /* Animate the transform properties */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -85,7 +88,6 @@ h1 {
   align-items: center;
   text-align: center;
   margin: auto;
-  
 }
 span {
   width: 100%;
@@ -99,7 +101,7 @@ span {
 
 .flop {
   height: 130px;
-  background:#f3d6c3;
+  background: #f3d6c3;
   -webkit-transform: rotateX(-90deg) translateZ(-70px);
   transform: rotateX(-90deg) translateZ(-70px);
 }
@@ -109,13 +111,12 @@ span {
   transform: rotateX(90deg);
 }
 
-.back{
+.back {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
   position: absolute;
   z-index: 1;
-
 }
 
 #next {
@@ -123,3 +124,44 @@ span {
   float: right;
   visibility: hidden;
 }
+.corr{
+  outline: none;
+  border: 2px solid green;
+  border-radius: 2px;
+}
+.animShake {
+  animation: shake 0.5s;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 2px;
+}
+@keyframes shake {
+  0% {
+    margin-left: -10px;
+  }
+  20% {
+    margin-left: 10px;
+  }
+  40% {
+    margin-left: -10px;
+  }
+  60% {
+    margin-left: 10px;
+  }
+  80% {
+    margin-left: -10px;
+  }
+  100% {
+    margin-left: 10px;
+  }
+}
+
+lottie-player {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20%;
+}
+

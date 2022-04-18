@@ -1,55 +1,58 @@
-html,body {
+html,
+body {
   background-color: ghostwhite;
   background-image: url(boom.gif);
-    margin: 0%;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .img {
-    /* background-image: url(./background.jpg); */
-    background-color: #cdecff;
-    height: 110%;
-    width: 70%;
-    margin: auto;
-  }
-  
-  .worldmap {
-    padding-top: 1%;
-    text-align: center;
-    position: relative;
-    z-index: 0;
-
-  }
-  
-  h1 {
-    text-align: center;
-    border: 2px solid black;
-    width: 60%;
-    margin: auto;
-    margin-top: 1%;
-  }
-  .i {
-    background-color: #faebd7;
-    text-align: center;
-    border: 2px solid black;
-    width: 30%;
-    margin: auto;
-  }
-  .rep{
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    height: 5%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
 }
 
-  .ans{
-    height: 100%;
-    width: 30%;
-    font-size: 30px;
-  }
-  
-  .container {
+.img {
+  /* background-image: url(./background.jpg); */
+  background-color: #cdecff;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.worldmap {
+  padding-top: 1%;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+h1 {
+  text-align: center;
+  border: 2px solid black;
+  width: 60%;
+  margin: auto;
+  margin-top: 1%;
+}
+.i {
+  background-color: #faebd7;
+  text-align: center;
+  border: 2px solid black;
+  width: 30%;
+  margin: auto;
+}
+
+.rep {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  height: 5%;
+}
+
+.ans {
+  height: 100%;
+  width: 30%;
+  font-size: 30px;
+}
+
+.container {
     background:#bce5ff;
     width: 77.5%;
     height: 110px;
@@ -61,6 +64,7 @@ html,body {
     border-radius: 15px;
     font-size: 35px;
   }
+
   .cube {
     margin: 0 auto;
     display: inline-block;
@@ -68,10 +72,9 @@ html,body {
     text-align: center;
     height: 110px;
     -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s; /* Animate the transform properties */
+    transition: transform 1.2s; /* Animate the transform properties */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    cursor: pointer;
   }
   
   .flip,
@@ -84,16 +87,15 @@ html,body {
     align-items: center;
     text-align: center;
     margin: auto;
-    
   }
   span {
     width: 100%;
   }
-  
+
   .flip {
     background: #fcfff5;
-  -webkit-transform: translateZ(70px);
-  transform: translateZ(70px);
+    -webkit-transform: translateZ(70px);
+    transform: translateZ(70px);
   }
   
   .flop {
@@ -103,20 +105,19 @@ html,body {
     transform: rotateX(-90deg) translateZ(-70px);
   }
   
-  
   .correctAns {
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
   }
-  .back{
+  
+  .back {
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid black;
     position: absolute;
     z-index: 1;
-  
   }
-
+  
   #next {
     cursor: pointer;
     float: right;
@@ -163,6 +164,4 @@ html,body {
     margin-right: 10%;
     margin-top: 20%;
   }
-  
-  
   
