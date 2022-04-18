@@ -19,7 +19,7 @@ ele.addEventListener("keyup", function (event) {
         ele.classList.add("corr");
       }
       ele.value = "";
-      if (i == 6) {
+      if (i == 1) {
         document.getElementById("next").style.visibility = "visible";
         document.getElementById("win").style.visibility = "visible";
       }

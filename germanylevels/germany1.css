@@ -1,5 +1,6 @@
 html,body {
-    background-color: #e8a87c;
+  background-color: ghostwhite;
+  background-image: url(boom.gif);
     margin: 0%;
     height: 100%;
     width: 100%;
@@ -8,13 +9,13 @@ html,body {
   .img {
     /* background-image: url(./background.jpg); */
     background-color: #cdecff;
-    height: 100%;
+    height: 110%;
     width: 70%;
     margin: auto;
   }
   
   .worldmap {
-    padding-top: 3%;
+    padding-top: 1%;
     text-align: center;
     position: relative;
     z-index: 0;
@@ -116,10 +117,51 @@ html,body {
   
   }
 
-  .next {
+  #next {
     cursor: pointer;
     float: right;
     visibility: hidden;
+  }
+
+  .corr{
+    outline: none;
+    border: 2px solid green;
+    border-radius: 2px;
+  }
+  .animShake {
+    animation: shake 0.5s;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 2px;
+  }
+  @keyframes shake {
+    0% {
+      margin-left: -10px;
+    }
+    20% {
+      margin-left: 10px;
+    }
+    40% {
+      margin-left: -10px;
+    }
+    60% {
+      margin-left: 10px;
+    }
+    80% {
+      margin-left: -10px;
+    }
+    100% {
+      margin-left: 10px;
+    }
+  }
+  
+  lottie-player {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
   }
   
   

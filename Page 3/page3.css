@@ -4,13 +4,12 @@ body {
   background-image: url(boom.gif);
   margin: 0%;
   height: 100%;
-  width: 100%;
 }
 
 .img {
   /* background-image: url(./background.jpg); */
   background-color: #cdecff;
-  height: 100%;
+  height: 110%;
   width: 70%;
   margin: auto;
   position: relative;
@@ -53,17 +52,17 @@ h1 {
 }
 
 .container {
-  background: #d1dbbd;
+  background:#bce5ff;
   width: 77.5%;
   height: 140px;
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 25px;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 2%;
 
   border-radius: 15px;
-  font-size: 35px;
+  font-size: 3px;
 }
 .cube {
   margin: 0 auto;
@@ -79,7 +78,7 @@ h1 {
 
 .flip,
 .flop {
-  border: 1px solid #85dcb8;
+  border: 1px solid grey;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 130px;
@@ -100,7 +99,7 @@ span {
 
 .flop {
   height: 130px;
-  background: #85dcb8;
+  background: #f3d6c3;
   -webkit-transform: rotateX(-90deg) translateZ(-70px);
   transform: rotateX(-90deg) translateZ(-70px);
 }
@@ -158,6 +157,7 @@ span {
 lottie-player {
   position: absolute;
   z-index: 1;
+  text-align: center;
   visibility: hidden;
   margin-left: 10%;
   margin-right: 10%;
