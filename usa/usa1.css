@@ -1,5 +1,6 @@
 html,body {
-    background-color: #e8a87c;
+    background-color: ghostwhite;
+    background-image: url(boom.gif);
     margin: 0%;
     height: 100%;
     width: 100%;
@@ -8,14 +9,18 @@ html,body {
   .img {
     /* background-image: url(./background.jpg); */
     background-color: #cdecff;
-    height: 150%;
-    width: 70%;
-    margin: auto;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  z-index: 0;
   }
   
   .worldmap {
     padding-top: 1%;
-    text-align: center;
+  position: relative;
+  text-align: center;
+  z-index: 0;
   }
   
   h1 {
