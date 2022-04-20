@@ -49,7 +49,7 @@ h1 {
 .ans {
   height: 100%;
   width: 30%;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .container {
@@ -63,7 +63,7 @@ h1 {
   margin-bottom: 2%;
 
   border-radius: 15px;
-  font-size: 35px;
+  font-size: 30px;
 }
 .cube {
   margin: 0 auto;
