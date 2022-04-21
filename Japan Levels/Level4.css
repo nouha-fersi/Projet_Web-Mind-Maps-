@@ -1,6 +1,8 @@
 html,
 body {
-  background-color: #e8a87c;
+  background-color: ghostwhite;
+  background-image: url(../cities.gif);
+  background-size: 55%;
   margin: 0%;
   height: 100%;
   width: 100%;
