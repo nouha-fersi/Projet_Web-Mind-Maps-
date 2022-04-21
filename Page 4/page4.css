@@ -1,7 +1,7 @@
 html,
 body {
     background-color: ghostwhite;
-    background-image: url(cities.gif) ;
+    background-image: url(../cities.gif) ;
     background-size: 55%;
     margin: 0%;
     height: 100%;

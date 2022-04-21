@@ -5,7 +5,7 @@
 html,
 body {
   background-color: ghostwhite;
-  background-image: url(cities.gif);
+  background-image: url(../cities.gif);
   margin: 0%;
   height: 100%;
   width: 100%;
@@ -25,7 +25,7 @@ body {
 }
 
 .img {
-  background-image: url(../1.png);
+  background-image: url(../black-background.png);
   height: 100%;
   width: 70%;
   margin: auto;
@@ -47,10 +47,10 @@ body {
 .LoginBtn,
 .CreditsBtn {
   background-color: #40b3a3;
-  color: black;
+  color: #f3d6c3;
   border: 2px solid #41b3a3;
   border-radius: 15px;
-  font-size: large;
+  /* font-size: large; */
   font-size: 40px;
   padding: 20px;
   padding-left: 20px;
@@ -99,7 +99,7 @@ button:hover {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 3%;
   padding-left: 37%;
   padding-right: 50%;
   /* Location of the box */
