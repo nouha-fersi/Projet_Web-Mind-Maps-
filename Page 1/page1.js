@@ -49,3 +49,41 @@ function openForm(formid, tabid) {
 document.getElementById("logintab").click();
 
 
+
+var guide = document.getElementById("guide");
+var gg = document.getElementById("gg");
+
+gg.onclick = function () {
+  guide.style.display = "block";
+};
+var spn = document.getElementsByClassName("close")[1];
+
+spn.onclick = function () {
+  guide.style.display = "none";
+};
+
+window.addEventListener("click", function(event){
+  if (event.target == guide) {
+    guide.style.display = "none";
+  }
+});
+
+
+
+var credits = document.getElementById("credits");
+var crd = document.getElementById("crd");
+
+crd.onclick = function () {
+  credits.style.display = "block";
+};
+var close2 = document.getElementsByClassName("close")[2];
+
+close2.onclick = function () {
+  credits.style.display = "none";
+};
+
+window.addEventListener("click", function(event){
+  if (event.target == guide) {
+    credits.style.display = "none";
+  }
+});
