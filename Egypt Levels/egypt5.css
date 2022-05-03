@@ -41,7 +41,7 @@ h1 {
   border: 2px solid black;
   width: 60%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 .i {
   background-color: #faebd7;
@@ -66,15 +66,16 @@ h1 {
 
 .container {
   background: #bce5ff;
-  width: 70%;
+  width: 114%;
   height: 140px;
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 25px;
-  margin-top: 5%;
-  margin-bottom: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   border-radius: 15px;
-  font-size: 24.5px;
+  font-size: 35px;
+  margin-left:-9%;
 }
 .cube {
   margin: 0 auto;
