@@ -22,6 +22,7 @@ ele.addEventListener("keyup", function (event) {
       if (i == 8) {
         document.getElementById("next").style.visibility = "visible";
         document.getElementById("win").style.visibility = "visible";
+        document.getElementById("rep").style.visibility = "hidden";
         ele.blur();
       }
     }
