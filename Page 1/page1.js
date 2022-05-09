@@ -48,8 +48,6 @@ function openForm(formid, tabid) {
 }
 document.getElementById("logintab").click();
 
-
-
 var guide = document.getElementById("guide");
 var gg = document.getElementById("gg");
 
@@ -62,7 +60,7 @@ spn.onclick = function () {
   guide.style.display = "none";
 };
 
-window.addEventListener("click", function(event){
+window.addEventListener("click", function (event) {
   if (event.target == guide) {
     guide.style.display = "none";
   }
@@ -82,8 +80,23 @@ close2.onclick = function () {
   credits.style.display = "none";
 };
 
-window.addEventListener("click", function(event){
+window.addEventListener("click", function (event) {
   if (event.target == guide) {
     credits.style.display = "none";
+  }
+});
+
+
+var welcome = document.getElementById("welcome");
+
+var spn1 = document.getElementsByClassName("close")[3];
+
+spn1.onclick = function () {
+  welcome.style.display = "none";
+};
+
+window.addEventListener("click", function (event) {
+  if (event.target == welcome) {
+    welcome.style.display = "none";
   }
 });
