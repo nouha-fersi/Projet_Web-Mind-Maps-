@@ -87,3 +87,22 @@ window.addEventListener("click", function(event){
     credits.style.display = "none";
   }
 });
+
+
+
+
+var welcome = document.getElementById("welcome");
+
+welcome.style.display = "none";
+
+var spn1 = document.getElementsByClassName("close")[3];
+
+spn1.onclick = function () {
+  welcome.style.display = "none";
+};
+
+window.addEventListener("click", function(event){
+  if (event.target == welcome) {
+    welcome.style.display = "none";
+  }
+});

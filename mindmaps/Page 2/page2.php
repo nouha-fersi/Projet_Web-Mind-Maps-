@@ -29,8 +29,8 @@ if (!isset($_SESSION['username'])) {
 
   <body>
     <div class="img">
-    <a href="../welcome.php">
-    <img
+      <a href="../welcome.php"
+        ><img
           class="back"
           src="../back.gif"
           alt="Back"
@@ -48,8 +48,7 @@ if (!isset($_SESSION['username'])) {
       <a class="country4">?</a>
       <a class="country5">?</a>
       <a class="country6">?</a>
-     <div class="logout"><a  href="../logout.php">logout </a></div>
-</div>
-   
+    </div>
+    
   </body>
 </html>

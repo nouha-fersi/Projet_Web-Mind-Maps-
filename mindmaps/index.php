@@ -5,6 +5,7 @@ require 'global.php';
 include 'config.php';
 session_start();
 error_reporting(0);
+
 global $sql;
 if (isset($_SESSION['username'])) {
     header("Location: welcome.php");
@@ -30,7 +31,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
     if ($url =='')
-    header("Location:welcome.php");
+    header("Location:welcome.html");
     else
     header('location:'.$url);
 	} else {
@@ -59,8 +60,8 @@ if (isset($_POST['register'])) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password,url)
-					VALUES ('$username', '$email', '$password','$url')";
+			$sql = "INSERT INTO users (username, email, password,url,score)
+					VALUES ('$username', '$email', '$password','$url','0')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
 				echo "<script>alert('Wow! User Registration Completed.')</script>";
@@ -118,10 +119,10 @@ if (isset($_POST['register'])) {
         <div class="tabcontent" id="login">
           <form action="" method="POST" class="login-email">
             <div class="input-group">
-              <input class="input-field" type="email" placeholder="Email" name="emaill" value="<?php echo $emaill; ?>" required>
+              <input class="input-field" type="email" placeholder="Enter your email" name="emaill" value="<?php echo $emaill; ?>" required>
             </div>
             <div class="input-group">
-              <input class="input-field" type="password" placeholder="Password" name="passwordd" value="<?php echo $_POST['passwordd']; ?>" required>
+              <input class="input-field" type="password" placeholder="Enter your password" name="passwordd" value="<?php echo $_POST['passwordd']; ?>" required>
             </div>
             <div class="checkbox-text">
               <div class="checkbox-content">

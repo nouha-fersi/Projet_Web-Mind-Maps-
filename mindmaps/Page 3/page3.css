@@ -176,3 +176,11 @@ lottie-player {
   margin-top: 20%;
 }
 
+.logout {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid black;
+  right: 25%;
+  z-index: 1;
+}

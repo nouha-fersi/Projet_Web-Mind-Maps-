@@ -3,6 +3,7 @@ include '../config.php';
 session_start();
 require '../global.php';
 echo $url;
+echo("<script src='page3.js'>document.writeln(abc);</script>");
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $nom=$_SESSION['username'];
@@ -21,7 +22,7 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Mind Maps</title>
     <link rel="shortcut icon" type="image/png" href="../favicon.png" />
     <link rel="stylesheet" href="page3.css" />
   </head>
@@ -115,8 +116,17 @@ if (!isset($_SESSION['username'])) {
       <div class="rep" id="rep">
         <input type="text" placeholder="Write Here" id="answer" class="ans" />
       </div>
-      <a class="logout" href="../logout.php">logout </a>
-    </div>
+    
+     <!-- <a href="../logout.php"><img
+          class="logout"
+          src="../logout.gif"
+          alt="Back"
+          height="38px"
+          width="38px"
+      /></a> 
+    </div>-->
+
+
     <script src="page3.js"></script>
   </body>
 </html>

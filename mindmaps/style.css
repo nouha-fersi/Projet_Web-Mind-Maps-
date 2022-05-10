@@ -146,11 +146,10 @@ button:hover {
   text-align: center;
 }
 
-.input-field , .input-group{
+/* .input-field{
   width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-}
+  /* border-radius: 5px; 
+} */
 /* The Close Button */
 
 .close {
@@ -377,3 +376,10 @@ a:hover {
   animation: transitionIn 2s;
 }
 
+.logout {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid black;
+  z-index: 1;
+}
