@@ -121,3 +121,20 @@
     <script src="page3.js"></script>
   </body>
 </html>
+<?php 
+include '../config.php';
+session_start();
+require '../global.php';
+echo $url;
+echo("<script src='page3.js'>document.writeln(abc);</script>");
+$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$nom=$_SESSION['username'];
+$sql = "UPDATE users
+SET url= '$url'
+WHERE username='$nom'";
+$result = mysqli_query($conn, $sql);
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}

@@ -40,7 +40,7 @@ if (!isset($_SESSION['username'])) {
       <div class="logo">
         <img src="../logo1.png" width="200px" />
       </div>
-      <a class="btn0" href="../Page 3/page3.php">LET'S BEGIN !</a>
+      <a class="btn0" href="../Page 3/page3.html">LET'S BEGIN !</a>
       <img class="trait" src="../page2trait.png" width="70%" />
       <a class="country1">?</a>
       <a class="country2">?</a>

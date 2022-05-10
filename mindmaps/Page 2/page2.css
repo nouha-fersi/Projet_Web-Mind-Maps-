@@ -1,6 +1,7 @@
 html,
 body {
-  background-image: url(cities.gif) ;
+  background-color: ghostwhite;
+  background-image: url(../cities.gif) ;
   background-size: 55%;
   margin: 0%;
   height: 100%;
@@ -20,7 +21,7 @@ body {
 }
 
 .img {
-  background-image: url(black-background.png);
+  background-image: url(../black-background.png);
   height: 100%;
   width: 70%;
   margin: auto;
@@ -104,5 +105,4 @@ body {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
-  color:white;
 }

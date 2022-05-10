@@ -60,8 +60,8 @@ if (isset($_POST['register'])) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password,url,score)
-					VALUES ('$username', '$email', '$password','$url','0')";
+			$sql = "INSERT INTO users (username, email, password,url)
+					VALUES ('$username', '$email', '$password','$url')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
 				echo "<script>alert('Wow! User Registration Completed.')</script>";
@@ -103,7 +103,7 @@ if (isset($_POST['register'])) {
       <img src="./logo1.png" width="350px" />
     </div>
     <div class="div1">
-      <button class="PlayBtn" onclick="window.location.href='./Page 2/page2.php'">Play</button>
+      <button class="PlayBtn" onclick="window.location.href='./Page 2/page2.html'">Play</button>
       <button class="GuideBtn" id="gg">Guide</button>
       <button class="LoginBtn"  id="myBtn">Login </button>
       <button class="CreditsBtn" id="crd">Credits</button>

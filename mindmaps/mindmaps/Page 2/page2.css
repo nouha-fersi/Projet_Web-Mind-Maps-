@@ -1,0 +1,108 @@
+html,
+body {
+  background-image: url(cities.gif) ;
+  background-size: 55%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.img {
+  background-image: url(black-background.png);
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.btn0, .country1, .country2, .country3, .country4, .country5, .country6{
+  background-color: #41b3a3;
+  color: #f3d6c3;
+  border: 2px solid #41b3a3;
+  border-radius: 10px;
+  font-size: large;
+  font-size: 30px;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.btn0 {
+  width: 30%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.trait {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.country1 {
+  margin-left: 11%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.country2 {
+  margin-left: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.country3 {
+  margin-left: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.country4 {
+  margin-left: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.country5 {
+  margin-left: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.country6 {
+  margin-left: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.btn0:hover {
+  opacity: 0.8;
+}
+
+.back{
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  color:white;
+}

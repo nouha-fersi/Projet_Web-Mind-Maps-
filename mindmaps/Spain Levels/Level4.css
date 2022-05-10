@@ -7,6 +7,7 @@ body {
   height: 100%;
   width: 100%;
   animation: transitionIn 1s;
+  overflow: hidden;
 }
 @keyframes transitionIn {
   from {
@@ -130,11 +131,6 @@ span {
   z-index: 1;
 }
 
-#next {
-  cursor: pointer;
-  float: right;
-  visibility: hidden;
-}
 .corr {
   outline: none;
   border: 2px solid green;
@@ -175,3 +171,69 @@ lottie-player {
   margin-right: 10%;
   margin-top: 20%;
 }
+
+.winPopup {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 8%;
+  padding-left: 40%;
+  padding-right: 50%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: transitionIn 4s;
+}
+
+.win-content {
+  margin: 4em auto 2em auto;
+  padding: 1em;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ccc;
+  font-size: x-large;
+  font-family: "Gill Sans", sans-serif;
+
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#next {
+  cursor: pointer;
+  float: right;
+} 
+#reload{
+  cursor: pointer;
+  float: left;
+  margin-top: 5px;
+}
+
+#home{
+  cursor: pointer;
+  margin-top: -3px;
+  padding-left: 5px;
+}
+

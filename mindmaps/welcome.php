@@ -41,7 +41,7 @@ if (!isset($_SESSION['username'])) {
     </div>
 
     <div class="div1">
-      <button class="PlayBtn" onclick="window.location.href='./Page 2/page2.php'">Play</button>
+      <button class="PlayBtn" onclick="window.location.href='./Page 2/page2.html'">Play</button>
       <button class="GuideBtn" id="gg">Guide</button>
       <button class="LoginBtn" id="myBtn" style="
  padding-left: 35px;
@@ -82,16 +82,19 @@ if (!isset($_SESSION['username'])) {
       </div>
     </div>
     <form method="get" name="form" action="">
-        <input type="text"  placeholder="Enter Data" name="data" value="44">
+        <input type="hidden"  placeholder="Enter Data" name="data" value="44">
     </form>
 <?php
-$r = $_GET['data'];
-echo $r ;
-   $nom=$_SESSION['username'];
-$sql = "UPDATE users
-SET score='$r'
-WHERE username='$nom'";
-$result = mysqli_query($conn, $sql);
+//$r = $_GET['data'];
+//echo $r ;
+//$z=$r + 5;
+//$sql = "UPDATE users
+//SET score='$z'
+//// $nom=$_SESSION['username'];
+//$sql = "UPDATE users
+//SET score='$z'
+//WHERE username='$nom'";
+//$result = mysqli_query($conn, $sql);
 ?>
 
 
