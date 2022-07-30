@@ -30,7 +30,7 @@ ele.addEventListener("keyup", function (event) {
         sessionStorage.setItem("totalScore", totalScore);
       }
       ele.value = "";
-      if (i == 1) {
+      if (i == 6) {
         totalScore += score;
         sessionStorage.setItem("totalScore", totalScore);
 
